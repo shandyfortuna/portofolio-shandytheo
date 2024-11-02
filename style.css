@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  minheight: 100vh;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #121212; /* Warna latar belakang gelap */
+  background-image: linear-gradient(#000000, #3533cd);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111111;
+  position: fixed; /* Menjadikan navbar tetap di posisi yang sama */
+  top: 0; /* Mengatur navbar berada di bagian atas */
+  width: 100%; /* Membuat navbar mengambil lebar penuh */
+  z-index: 1000; /* Menempatkan navbar di atas elemen lain */
+}
+
+
+nav h1 {
+  color: #ffffff;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Sections */
+section { 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#home a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#home a:hover {
+  background-color: #0056b3;
+  }
+
+
+#home h2 {
+  font-size: 36px; /* Ukuran font untuk h2 */
+  margin: 10px 0; /* Margin atas dan bawah */
+}
+
+#home p {
+  font-size: 24px; /* Ukuran font untuk paragraf */
+  margin: 5px 0; /* Margin atas dan bawah */
+}
+
+#home .profile-image {
+  width: 150px;
+  height: 200px;
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+/* About Section Styles */
+#about {
+  background-color: #f67312; /* Dark background */
+  background-image: linear-gradient(#ffffff);
+  color: #ffffff; /* Light text color */
+  padding: 50px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin: 50px auto; /* Space around the section and center it */
+  width: 100%; /* Set width of the card */
+  max-width: 900px; /* Max width for larger screens */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  height: auto; /* Adjust height automatically based on content */
+}
+
+#about h2 {
+  font-size: 2em; /* Font size for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+  color: #ffffff; /* Bright color for heading */
+}
+
+#about p {
+  font-size: 1.5rem; /* Ukuran font untuk paragraf */
+  line-height: 1.6; /* Tinggi baris untuk meningkatkan keterbacaan */
+  margin-bottom: 10px; /* Spasi di bawah paragraf */
+}
+
+
+.box {
+  width: 80%; /* Atur lebar sesuai kebutuhan, bisa diubah menjadi 100% untuk lebar penuh */
+  margin: 0 auto; /* Agar box terletak di tengah halaman */
+  padding: 20px; /* Ruang di dalam box */
+  background-color: #ffcb01; /* Contoh warna latar belakang */
+  color: #000000; /* Contoh warna teks */
+  border-radius: 10px; /* Menambahkan sudut melingkar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan */
+}
+
+#about ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+#about li {
+  background-color: #ffcb01; /* Dark background for list items */
+  margin: 10px 0; /* Space between list items */
+  padding: 10px; /* Padding inside list items */
+  border-radius: 4px; /* Rounded corners for list items */
+  font-size: 1.5rem;
+}
+
+
+/* Highlighting the strong text */
+#about strong {
+  color: #000000; /* Highlight color for strong text */
+}
+
+
+/* Projects */
+.project {
+  background-color: #f67312;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+}
+.project h3 {
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+.project p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.project a {
+  color: #417ded;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Contact Form Styles */
+#contact {
+background-color: #1e1e1e;
+color: #f1f1f1;
+padding: 2rem;
+text-align: center;
+}
+
+#contact h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+#contactForm {
+max-width: 600px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+
+#contactForm label {
+margin-top: 1rem;
+text-align: left;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+#contactForm input,
+#contactForm textarea {
+background-color: #333;
+border: 1px solid #444;
+color: #f1f1f1;
+padding: 0.8rem;
+margin-top: 0.5rem;
+border-radius: 5px;
+width: 100%;
+}
+
+#contactForm button {
+background-color: #5c6bc0;
+color: #f1f1f1;
+border: none;
+padding: 0.8rem 1.2rem;
+margin-top: 1.5rem;
+cursor: pointer;
+border-radius: 5px;
+font-size: 1rem;
+transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+background-color: #3949ab;
+}
+
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #111111;
+  text-align: center;
+}
+footer p, .social-links a {
+  color: #ffffff;
+}
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Animasi saat elemen muncul */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Memastikan elemen tampil saat di-scroll */
+section {
+  animation: fadeIn 0.5s forwards; /* Menambahkan animasi fadeIn */
+}
